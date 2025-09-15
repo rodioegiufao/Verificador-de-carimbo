@@ -437,7 +437,7 @@ with tab2:
     st.markdown("""
     ### Pontos abordados no tutorial:
     - Como preparar seus arquivos PDF para análise
-    - Como usar palavras-chave adicionais del projeto
+    - Como usar palavras-chave adicionais do projeto
     - Interpretação dos resultados
     - Como usar o relatório em Excel gerado
     - Entendendo a busca automática por engenheiros e CREAs
@@ -502,4 +502,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
