@@ -431,7 +431,7 @@ with tab2:
     """)
     
     # Inserir o vídeo do YouTube
-    video_url = "https://youtu.be/NWEeY50bbfk?si=nzADpjDg1j8CZY8J"
+    video_url = "https://youtu.be/GB6hvQPODCw"
     st.video(video_url)
     
     st.markdown("""
@@ -502,3 +502,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
