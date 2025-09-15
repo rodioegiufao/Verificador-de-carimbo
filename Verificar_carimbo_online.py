@@ -152,10 +152,10 @@ with tab1:
         # Verifica se o nome do arquivo contém "assinado" (case insensitive)
         return "assinado" in nome_arquivo.lower()
 
-    # Função para extrair o código do projeto del nome do arquivo
+    # Função para extrair o código do projeto do nome do arquivo - CORRIGIDA
     def extrair_codigo_projeto(nome_arquivo):
-        # Padrão: PRJ-XXX-IPER (onde XXX é o código do projeto)
-        padrao = r'PRJ-([A-Z]+)-IPER'
+        # Padrão mais flexível: PRJ-XXX- (onde XXX é o código do projeto)
+        padrao = r'PRJ-([A-Z]+)-'
         correspondencia = re.search(padrao, nome_arquivo)
         if correspondencia:
             return correspondencia.group(1)
@@ -431,7 +431,7 @@ with tab2:
     """)
     
     # Inserir o vídeo do YouTube
-    video_url = "https://youtu.be/GB6hvQPODCw"
+    video_url = "https://youtu.be/NWEeY50bbfk?si=nzADpjDg1j8CZY8J"
     st.video(video_url)
     
     st.markdown("""
@@ -502,5 +502,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
